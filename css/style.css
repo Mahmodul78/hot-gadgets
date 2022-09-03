@@ -1,0 +1,220 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar img {
+    width: 97px;
+}
+
+.nav-link {
+    color: black;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+    background-color: orange;
+    padding: 2px;
+    border: none;
+    border-radius: 17px;
+}
+
+.carousel-item p {
+    width: 440px;
+}
+
+#carousel {
+    background-image: url(/images/bg-2.png);
+    background-repeat: no-repeat;
+    background-position: 3%;
+    background-position-y: bottom;
+    background-size: 187px;
+}
+
+.carousel-inner {
+    background-image: url(/images/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 77px;
+}
+
+.mobile .mobileTitle h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.mobile .mobileTitle span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.mobile img {
+    width: 100%;
+    margin: auto;
+}
+
+.mobile .card-body,
+.mobile .card-footer {
+    width: 80%;
+    margin: auto;
+}
+
+.mobile .card-body {
+    text-align: center;
+}
+
+.mobile .card-footer {
+    border-top: none;
+    background-color: white;
+    text-align: center;
+}
+
+.mobile .card.h-100 {
+    padding: 27px;
+    border: none;
+    box-shadow: 1px 1px 27px 17px whitesmoke;
+    border-radius: 15px;
+}
+
+.mobile .card.h-100 h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.mobile .card.h-100 p {
+    font-size: 14px;
+    color: rgb(161, 157, 157);
+}
+
+.mobile .card-footer h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#categories .catTitle {
+    width: 150px;
+    margin: auto;
+    position: relative;
+}
+
+#categories .catTitle::after {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 70%;
+    background-color: orange;
+    left: 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+#categories .card {
+    width: 200px;
+    text-align: center;
+    border: none;
+    box-shadow: 1px 1px 27px 17px whitesmoke;
+}
+
+#categories .card1 {
+    border-radius: 0px 17px 0px 37px;
+}
+
+#categories .card2 {
+    border-radius: 17px 0px 37px 0px;
+}
+
+#categories h5 {
+    font-weight: 600;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+footer span{
+    font-weight: 700;
+    color: red;
+    font-size: 17px;
+    border-bottom: 2px dotted olive;
+}
+footer p{
+    color: orangered;
+}
+
+/*----------- Media Query Start -----------*/
+
+@media (max-width:1199.98px) {
+    #categories .row3 {
+        justify-content: space-evenly !important;
+    }
+}
+
+@media (max-width:1071.98px) {
+    #categories .catTitle::after {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:991.98px) {
+    #categories .col-md-3.m-5 {
+        margin: 0 !important;
+    }
+
+    #categories .card {
+        width: 150px;
+    }
+
+    #categories .row3 {
+        justify-content: space-around !important;
+    }
+
+    #categories .catTitle::after {
+        left: 17px;
+    }
+
+    .carousel-item p {
+        width: 100%;
+    }
+
+    .mobile .card.h-100 h5 {
+        font-size: 15px;
+    }
+
+    .mobile .card.h-100 p {
+        font-size: 10px;
+    }
+
+    .mobile .card-body,
+    .mobile .card-footer {
+        width: 100%;
+    }
+
+    .mobile .card-footer h2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .carousel-item {
+        text-align: center;
+    }
+
+    .mobile .card.h-100 h5 {
+        font-size: 18px;
+    }
+
+    .mobile .card.h-100 p {
+        font-size: 14px;
+    }
+
+    #categories .card {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 37px;
+    }
+
+}
+
+@media (max-width:575.99px) {
+    #categories .catTitle::after {
+        left: 14px;
+    }
+}
